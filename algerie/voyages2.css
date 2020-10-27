@@ -300,3 +300,45 @@ h1 {
 .txt_box {
   width: 60%;
 }
+
+#corps_villes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 3%;
+}
+
+.lien_miniatures {
+  position: relative;
+  filter: grayscale(0%);
+  transition: 0.5s;
+}
+
+#lien_txt {
+  position: absolute;
+  z-index: +1;
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-size: 30px;
+  top: 35%;
+  left: 7%;
+  width: 100%;
+}
+
+.titre_txt {
+  color: white;
+  text-shadow: 1px 2px 3px black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.lien_miniatures:hover #lien_txt {
+  opacity: 1;
+}
+
+.lien_miniatures:hover: {
+  filter: grayscale(100%);
+}
