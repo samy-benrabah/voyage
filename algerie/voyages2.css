@@ -282,14 +282,21 @@ h1 {
   justify-content: space-around;
 }
 
+#description {
+  margin-top: 5%;
+  text-align: center;
+}
+
 #culture,
 #histoire,
 #paysage,
 #ville {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-top: 5%;
 }
 
-.txt {
+.txt_box {
+  width: 60%;
 }
