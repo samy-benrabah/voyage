@@ -1,3 +1,17 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  font-family: "Questrial", sans-serif;
+}
+
+header {
+  background-image: url(img/algérie/panoramique.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+
 /* Carroussel */
 
 .scene {
@@ -75,7 +89,7 @@ img {
 .caroussel_diapo {
   position: relative;
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .contenu_carou {
@@ -250,15 +264,22 @@ img {
 
 /* Fin de Carroussel */
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+/* MISE EN FORME CORPS DE TEXTE */
 
 h1 {
   text-align: center;
+  font-size: 70px;
 }
+
+#description {
+  display: flex;
+  font-size: 30px;
+  background-color: #405e63;
+  height: 100px;
+  align-items: center;
+  color: #ffffff;
+}
+
 .img_corps {
   width: 300px;
   height: auto;
@@ -272,7 +293,7 @@ h1 {
 }
 
 #haut {
-  margin-bottom: 10px;
+  margin-bottom: 5%;
 }
 
 #haut,
@@ -280,11 +301,28 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  background-color: #405e63;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#background {
+  background-color: #5b858a;
+  padding-top: 2px;
+  margin-top: 3%;
+  padding-bottom: 2px;
+  margin-bottom: 3%;
 }
 
 #description {
-  margin-top: 5%;
+  margin-top: 1%;
+  margin-bottom: 3%;
   text-align: center;
+}
+
+#bas {
+  margin-bottom: 2%;
 }
 
 #culture,
@@ -294,11 +332,21 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 5%;
+  margin: 0;
 }
 
 .txt_box {
   width: 60%;
+}
+
+.txt {
+  font-size: 20px;
+  text-align: justify;
+  color: rgb(250, 250, 242);
+}
+
+h2 {
+  color: #9e9e9e;
 }
 
 #corps_villes {
@@ -306,13 +354,17 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
-  margin-top: 3%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  background-color: #888888;
 }
 
 .lien_miniatures {
   position: relative;
   filter: grayscale(0%);
   transition: 0.5s;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 #lien_txt {
@@ -322,7 +374,7 @@ h1 {
   transition: opacity 0.5s;
   font-size: 30px;
   top: 35%;
-  left: 7%;
+  text-align: center;
   width: 100%;
 }
 
@@ -339,6 +391,6 @@ a {
   opacity: 1;
 }
 
-.lien_miniatures:hover: {
+.lien_miniatures:hover {
   filter: grayscale(100%);
 }
