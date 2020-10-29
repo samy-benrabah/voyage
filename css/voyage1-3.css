@@ -125,7 +125,7 @@ header .subnav:hover ul {
 /* ///// FIN HEADER //// */
 
 .background-home {
-    background: url("/images/maroc/agadir/agadir1.jpg");
+    background: url("../images/maroc/agadir/agadir1.jpg");
     height: 500px;
     display: flex;
     align-items: center;
@@ -167,7 +167,7 @@ header .subnav:hover ul {
 }
 
 .plage-agadir {
-    background: url("/images/maroc/agadir/agadir-beach.jpg");
+    background: url("../images/maroc/agadir/agadir-beach.jpg");
     width: 200px;
     height: 200px;
     background-size: cover;
@@ -176,7 +176,7 @@ header .subnav:hover ul {
 }
 
 .valle-des-oiseaux {
-    background: url("/images/maroc/agadir/valle-des-oiseaux.jpg");
+    background: url("../images/maroc/agadir/valle-des-oiseaux.jpg");
     width: 200px;
     height: 200px;
     background-size: cover;
@@ -209,14 +209,14 @@ header .subnav:hover ul {
 }
 
 .image1 {
-    background: url("/images/maroc/agadir/image1.jpg");
+    background: url("../images/maroc/agadir/image1.jpg");
     width: 250px;
     height: 450px;
     background-size: cover;
 }
 
 .image2 {
-    background: url("/images/maroc/agadir/image2.jpg");
+    background: url("../images/maroc/agadir/image2.jpg");
     width: 250px;
     height: 450px;
     background-size: cover;
@@ -224,21 +224,21 @@ header .subnav:hover ul {
 }
 
 .image3 {
-    background: url("/images/maroc/agadir/image3.jpg");
+    background: url("../images/maroc/agadir/image3.jpg");
     width: 250px;
     height: 450px;
     background-size: cover;
 }
 
 .image4 {
-    background: url("/images/maroc/agadir/image4.jpg");
+    background: url("../images/maroc/agadir/image4.jpg");
     width: 250px;
     height: 450px;
     background-size: cover;
 }
 
 .image5 {
-    background: url("/images/maroc/agadir/image5.jpg");
+    background: url("../images/maroc/agadir/image5.jpg");
     width: 250px;
     height: 450px;
     background-size: cover;
@@ -274,6 +274,12 @@ header .subnav:hover ul {
 
 /* ///// FOOTER /////*/
 
+footer {
+    color: #8d6530;
+    background-color: #bd8945b4;
+    padding: 20px;
+}
+
 footer div div {
     display: flex;
     justify-content: space-around;
@@ -281,4 +287,21 @@ footer div div {
 
 footer ul {
     list-style: none;
+}
+
+footer ul li {
+    margin: 15px;
+}
+
+footer img {
+    width: 100px;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 600px) {
+    footer div div {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 }
