@@ -7,14 +7,16 @@ body {
 }
 
 header {
-  background-image: url(img/algérie/panoramique.jpg);
+  background-image: url(img/alger/img3.jpg);
   background-size: cover;
-  height: 50vh;
+  height: 70vh;
 }
 
 h1 {
   text-align: center;
   font-size: 70px;
+  margin-bottom: 0;
+  margin-top: 15%;
 }
 
 #intro_txt {
@@ -129,6 +131,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 3%;
 }
 
 #vignette_haut,
