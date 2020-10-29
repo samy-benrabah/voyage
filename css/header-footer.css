@@ -1,0 +1,148 @@
+header {
+    position: relative;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    color: #ffffff;
+    margin: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    height: 80px;
+    width: 100%;
+}
+
+
+/* ///// NAVIGATION //// */
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header ul li {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+header ul li a {
+    display: block;
+    margin: 0;
+}
+
+header ul li a:hover {
+    background-color: #bd894591;
+    box-shadow: 0 0 5px 5px #bd8945b4;
+}
+
+header ul li ul li {
+    display: none;
+}
+
+header ul li ul {
+    display: flex;
+    flex-direction: column;
+}
+
+header ul li:hover ul li {
+    display: block;
+}
+
+header ul li:hover a {
+    background-color: #bd8945b4;
+}
+
+header ul li i {
+    margin-left: 15px;
+}
+
+header .subnav ul {
+    display: none;
+}
+
+header .subnav ul li {
+    width: 140px;
+}
+
+header .subnav:hover ul {
+    display: block;
+    position: relative;
+    left: 200px;
+    bottom: 40px;
+}
+
+@media screen and (max-width: 900px) {
+    header .subnav:hover ul {
+        display: block;
+        position: relative;
+        left: -140px;
+        bottom: 40px;
+    }
+}
+
+
+/* ///// FIN NAVIGATION //// */
+
+
+/* ///// FIN HEADER //// */
+
+
+/* ///// FOOTER /////*/
+
+footer {
+    color: #8d6530;
+    background-color: #bd8945b4;
+    padding: 20px;
+}
+
+footer div div {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin: 15px;
+}
+
+footer img {
+    width: 100px;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 600px) {
+    footer div div {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* ///// FIN FOOTER ///// */
