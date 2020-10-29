@@ -1,0 +1,165 @@
+* {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url("https://www.ferrycenter.ch/wp-content/uploads/2019/08/Tunisie.png")fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.9; */
+}
+
+body {
+    background: url("https://www.ferrycenter.ch/wp-content/uploads/2019/08/Tunisie.png")fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Debut texte animée */
+
+.scroll {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.scroll-up {
+    height: 50vh;
+    width: 120vh;
+    overflow: hidden;
+    position: relative;
+    /* background: #FF0000; */
+    color: white;
+    text-align: justify;
+}
+
+.scroll-up p {
+    font-size: 2em;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: justify;
+    /* Starting position */
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    /* Apply animation to this element */
+    -moz-animation: scroll-up 15s linear infinite;
+    -webkit-animation: scroll-up 15s linear infinite;
+    animation: scroll-up 30s linear infinite;
+}
+
+
+/* Move it (define the animation) */
+
+@-moz-keyframes scroll-up {
+    0% {
+        -moz-transform: translateY(100%);
+    }
+    100% {
+        -moz-transform: translateY(-100%);
+    }
+}
+
+@-webkit-keyframes scroll-up {
+    0% {
+        -webkit-transform: translateY(100%);
+    }
+    100% {
+        -webkit-transform: translateY(-100%);
+    }
+}
+
+@keyframes scroll-up {
+    0% {
+        -moz-transform: translateY(100%);
+        /* Browser bug fix */
+        -webkit-transform: translateY(100%);
+        /* Browser bug fix */
+        transform: translateY(100%);
+    }
+    100% {
+        -moz-transform: translateY(-100%);
+        /* Browser bug fix */
+        -webkit-transform: translateY(-100%);
+        /* Browser bug fix */
+        transform: translateY(-100%);
+    }
+}
+
+
+/* Fin texte animée */
+
+
+/* Debut body */
+
+.page1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sous-page1 {
+    height: 50vh;
+    width: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    color: white;
+    font-family: 'Mukta', sans-serif;
+}
+
+.img1 {
+    height: auto;
+    width: auto;
+    transition: 0.5s ease-in;
+    /* opacity: 0.9; */
+}
+
+.img1:hover {
+    transform: scale(1.5);
+}
+
+.presentation1 {
+    margin-left: 5%;
+    font-size: 5vh;
+}
+
+.page2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sous-page2 {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 50vh;
+    width: 70%;
+    color: white;
+    font-family: 'Mukta', sans-serif;
+}
+
+.img2 {
+    height: auto;
+    width: auto;
+    transition: 0.5s ease-in;
+}
+
+.img2:hover {
+    transform: scale(1.5);
+}
+
+.presentation2 {
+    margin-left: 5%;
+    font-size: 5vh;
+}
+
+
+/* Fin de body */
