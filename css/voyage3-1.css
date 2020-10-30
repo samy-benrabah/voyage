@@ -1,14 +1,9 @@
-* {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 html {
     background: url("https://www.ferrycenter.ch/wp-content/uploads/2019/08/Tunisie.png")fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0;
+    margin: 0;
     /* opacity: 0.9; */
 }
 
@@ -16,6 +11,12 @@ body {
     background: url("https://www.ferrycenter.ch/wp-content/uploads/2019/08/Tunisie.png")fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -28,19 +29,24 @@ body {
 }
 
 .scroll-up {
+    display: flex;
+    justify-content: center;
     height: 50vh;
-    width: 120vh;
+    width: 140vh;
     overflow: hidden;
     position: relative;
     /* background: #FF0000; */
-    color: white;
+    color: black;
     text-align: justify;
+    /* opacity: 0.5; */
+    background-color: rgb(173, 230, 255);
+    border-radius: 3vh;
 }
 
 .scroll-up p {
     font-size: 2em;
     position: absolute;
-    width: 100%;
+    width: 80%;
     height: 100%;
     margin: 0;
     line-height: 50px;
@@ -101,25 +107,52 @@ body {
 
 .page1 {
     width: 100%;
+    height: auto;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    margin-top: 3%;
+}
+
+#global {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* justify-content: space-around; */
+    height: auto;
+    margin-top: 3%;
+    margin-bottom: 8%;
 }
 
 .sous-page1 {
+    background-color: antiquewhite;
     height: 50vh;
-    width: 70%;
+    width: 50%;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
-    color: white;
+    border-radius: 5vh;
+    color: black;
     font-family: 'Mukta', sans-serif;
+    border: solid white 2px;
 }
 
 .img1 {
-    height: auto;
-    width: auto;
+    margin-right: 5%;
+    border-radius: 10vh;
+    height: 20vh;
+    width: 50vh;
     transition: 0.5s ease-in;
     /* opacity: 0.9; */
+}
+
+img {
+    border-radius: 10vh;
+    height: 40vh;
+    width: 50vh;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
 }
 
 .img1:hover {
@@ -127,23 +160,29 @@ body {
 }
 
 .presentation1 {
-    margin-left: 5%;
-    font-size: 5vh;
+    width: 40%;
+    font-size: 1vh;
+    background-color: thistle;
+    border-radius: 5vh;
 }
 
 .page2 {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    margin-top: 5%;
 }
 
 .sous-page2 {
+    background-color: antiquewhite;
+    height: 50vh;
+    width: 50%;
     display: flex;
     flex-direction: row-reverse;
-    height: 50vh;
-    width: 70%;
-    color: white;
+    border-radius: 5vh;
+    color: black;
     font-family: 'Mukta', sans-serif;
+    border: solid white 2px;
 }
 
 .img2 {
@@ -159,6 +198,13 @@ body {
 .presentation2 {
     margin-left: 5%;
     font-size: 5vh;
+    background-color: thistle;
+    border-radius: 5vh;
+}
+
+footer {
+    font-family: 'Mukta', sans-serif;
+    font-size: 15px;
 }
 
 

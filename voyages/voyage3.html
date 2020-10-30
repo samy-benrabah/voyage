@@ -8,7 +8,10 @@
     <title>Tunisie</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/voyage3.css'>
+
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d34f22fe3f.js" crossorigin="anonymous"></script>
+    <title>Chefchaouen l Maroc</title>
     <script src='main.js'></script>
 </head>
 
@@ -35,14 +38,14 @@
                         <ul>
                             <li class="subnav"><a href="">Samir <i class="fas fa-angle-right"></i></a>
                                 <ul>
-                                    <li><a href="voyage2-1.html">Ville 1</a></li>
-                                    <li><a href="voyage2-2.html">Ville 2</a></li>
+                                    <li><a href="voyage2-1.html">Alger</a></li>
+                                    <li><a href="voyage2-2.html">Annaba</a></li>
                                 </ul>
                             </li>
                             <li class="subnav"><a href="">Samy <i class="fas fa-angle-right"></i></a>
                                 <ul>
-                                    <li><a href="voyage3-1.html">Ville 1</a></li>
-                                    <li><a href="voyage3-2.html">Ville 2</a></li>
+                                    <li><a href="voyage3-1.html">Sousse</a></li>
+                                    <li><a href="voyage3-2.html">Djerba</a></li>
                                 </ul>
                             </li>
                             <li class="subnav"><a href="">Morad <i class="fas fa-angle-right"></i></a>
@@ -58,77 +61,79 @@
         </nav>
     </header>
     <!-- Carroussel  -->
-    <section>
-        <div class='caroussel_diapo'>
-            <input checked id="carou_un" name="rotation" type="radio">
-            <label for="carou_un"></label>
-            <input id="carou_deux" name="rotation" type="radio">
-            <label for="carou_deux"></label>
-            <input id="carou_trois" name="rotation" type="radio">
-            <label for="carou_trois"></label>
-            <input id="carou_quatre" name="rotation" type="radio">
-            <label for="carou_quatre"></label>
-            <input id="carou_cinq" name="rotation" type="radio">
-            <label for="carou_cinq"></label>
-            <input id="carou_six" name="rotation" type="radio">
-            <label for="carou_six"></label>
-            <input id="carou_sept" name="rotation" type="radio">
-            <label for="carou_sept"></label>
-            <input id="carou_huit" name="rotation" type="radio">
-            <label for="carou_huit"></label>
-            <div class="contenu_carou">
-                <div class="caroussel">
-                    <img src="image/desert2.jpg" alt=maroc>
-                    <img src="image/sousse.png" alt=algerie>
-                    <img src="image/tunis.jpg" alt=tunisie>
-                    <img src="image/bejaia.jpg" alt=maroc>
-                    <img src="image/alger.jpg" alt=algerie>
-                    <img src="image/chefchaouen.jpg" alt=tunisie>
-                    <img src="image/desert.jpg" alt=maroc>
-                    <img src="image/agadir.jpg" alt=tunisie>
+    <main>
+        <section>
+            <div class='caroussel_diapo'>
+                <input checked id="carou_un" name="rotation" type="radio">
+                <label for="carou_un"></label>
+                <input id="carou_deux" name="rotation" type="radio">
+                <label for="carou_deux"></label>
+                <input id="carou_trois" name="rotation" type="radio">
+                <label for="carou_trois"></label>
+                <input id="carou_quatre" name="rotation" type="radio">
+                <label for="carou_quatre"></label>
+                <input id="carou_cinq" name="rotation" type="radio">
+                <label for="carou_cinq"></label>
+                <input id="carou_six" name="rotation" type="radio">
+                <label for="carou_six"></label>
+                <input id="carou_sept" name="rotation" type="radio">
+                <label for="carou_sept"></label>
+                <input id="carou_huit" name="rotation" type="radio">
+                <label for="carou_huit"></label>
+                <div class="contenu_carou">
+                    <div class="caroussel">
+                        <img src="image/desert2.jpg" alt=maroc>
+                        <img src="image/sousse.png" alt=algerie>
+                        <img src="image/tunis.jpg" alt=tunisie>
+                        <img src="image/bejaia.jpg" alt=maroc>
+                        <img src="image/alger.jpg" alt=algerie>
+                        <img src="image/chefchaouen.jpg" alt=tunisie>
+                        <img src="image/desert.jpg" alt=maroc>
+                        <img src="image/agadir.jpg" alt=tunisie>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Fin de Carroussel -->
+        <!--Début Flipcard1 -->
+        <div id="flipcard1">
+            <div id="card1">
+                <div id="front1">Sousse</div>
+                <div id="back1">
+                    <div class="img-txt1">
+                        <img id="sousse" src="image/sousse.png" alt="sousse">
+                        <div class="txt-back">
+                            <a id="a1" href="voyage3-1.html"> </p>Ville riche d'histoire voici Sousse ...
+                                </p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- Fin Flipcard1 -->
 
-    </section>
-    <!-- Fin de Carroussel -->
-    <!--Début Flipcard1 -->
-    <div id="flipcard1">
-        <div id="card1">
-            <div id="front1">Sousse</div>
-            <div id="back1">
-                <div class="img-txt1">
-                    <img id="sousse" src="image/sousse.png" alt="sousse">
-                    <div class="txt-back">
-                        <a id="a1" href="voyage3-1.html"> </p>Ville riche d'histoire voici Sousse ...
+        <!--Début Flipcard2 -->
+        <div id="flipcard2">
+            <div id="card2">
+                <div id="front2">Djerba</div>
+                <div id="back2">
+                    <div class="img-txt2">
+                        <div class="img-hammamet">
+                            <img id="hammamet" src="image/hammamet.jpg" alt="sousse">
+                        </div>
+                        <div class="txt-back">
+                            <a id="a2" href="voyage3-2.html">
+                                <p>Partez à la découverte de Djerba !</a>
                             </p>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Fin Flipcard1 -->
-
-    <!--Début Flipcard2 -->
-    <div id="flipcard2">
-        <div id="card2">
-            <div id="front2">Djerba</div>
-            <div id="back2">
-                <div class="img-txt2">
-                    <div class="img-hammamet">
-                        <img id="hammamet" src="image/hammamet.jpg" alt="sousse">
-                    </div>
-                    <div class="txt-back">
-                        <a id="a2" href="voyage3-2.html">
-                            <p>Partez à la découverte de Djerba !</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Fin Flipcard2 -->
+        <!-- Fin Flipcard2 -->
+    </main>
     <footer>
         <div>
             <div>
@@ -145,13 +150,13 @@
                 </ul>
                 <ul>
                     <li><a href="voyage1-2.html">Chefchaouen</a></li>
-                    <li><a href="voyage2-1.html">Ville algerienne 1</a></li>
-                    <li><a href="voyage3-1.html">Ville tunisienne 1</a></li>
+                    <li><a href="voyage2-1.html">Alger</a></li>
+                    <li><a href="voyage3-1.html">Sousse</a></li>
                 </ul>
                 <ul>
                     <li><a href="voyage1-3.html">Agadir</a></li>
-                    <li><a href="voyage2-2.html">Ville algerienne 2</a></li>
-                    <li><a href="voyage3-2.html">Ville tunisienne 2</a></li>
+                    <li><a href="voyage2-2.html">Annaba</a></li>
+                    <li><a href="voyage3-2.html">Djerba</a></li>
                 </ul>
             </div>
         </div>
