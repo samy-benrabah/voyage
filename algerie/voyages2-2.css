@@ -10,17 +10,15 @@ body {
 }
 
 header {
-  position: relative;
   height: 1080px;
 }
 
 video {
-  position: absolute;
   z-index: -1;
 }
 
 h1 {
-  margin-top: 5%;
+  margin-top: 8%;
   position: absolute;
   left: -1050px;
   animation: slideIn 3s forwards;
