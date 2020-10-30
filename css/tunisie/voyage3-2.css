@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: lighter;
+  background-color: rgb(217, 243, 255);
+}
+
+/* ///// HEADER //// */
+
+header {
+  position: relative;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+  color: #ffffff;
+  margin: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+}
+
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  height: 80px;
+  width: 100%;
+}
+
+/* ///// NAVIGATION //// */
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+ul li {
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+ul li a {
+  display: block;
+  margin: 0;
+}
+
+ul li a:hover {
+  background-color: #45a5bd54;
+  box-shadow: 0 0 5px 5px #45a5bd77;
+}
+
+ul li ul li {
+  display: none;
+}
+
+ul li ul {
+  display: flex;
+  flex-direction: column;
+}
+
+ul li:hover ul li {
+  display: block;
+}
+
+ul li:hover a {
+  background-color: #45a5bd75;
+}
+
+ul li i {
+  margin-left: 15px;
+}
+
+.subnav ul {
+  display: none;
+}
+
+.subnav ul li {
+  width: 140px;
+}
+
+.subnav:hover ul {
+  display: block;
+  position: relative;
+  left: 200px;
+  bottom: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .subnav:hover ul {
+    display: block;
+    position: relative;
+    left: -140px;
+    bottom: 40px;
+  }
+}
+
+/* ///// FIN NAVIGATION //// */
+
+/* ///// FIN HEADER //// */
+
+.background-chaouen {
+  background: url("../../images/samy/djerba.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+}
+
+.sobre {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-chaouen div {
+  color: #00c3ff;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.background-chaouen div h1 {
+  font-size: 50px;
+}
+
+.background-chaouen div p {
+  font-size: 50px;
+  font-weight: lighter;
+  letter-spacing: 12px;
+}
+
+.image {
+  background: url("../../images/samy/djerba.jpg") no-repeat right;
+  width: 500px;
+  height: 520px;
+}
+
+.text-asid-img {
+  background-color: #a7a7a756;
+  width: 500px;
+  height: 520px;
+  padding: 50px;
+}
+
+.description {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  letter-spacing: 1.4px;
+}
+
+.description i {
+  color: #17a072;
+}
+
+.description h2 {
+  font-size: 40px;
+  color: #008cff;
+}
+
+.description P {
+  margin: 30px 0 20px 0;
+}
+
+.entourage hr {
+  width: 37%;
+  margin: 20px 0;
+}
+
+.div-entourage {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.entourage {
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-entourage div {
+  margin: 0 20px;
+}
+
+.medina {
+  background: url("../../images/samy/djerba3.jpg");
+  width: 300px;
+  height: 300px;
+  font-size: 12px;
+  padding: 30px;
+}
+
+.text-entourage {
+  width: 70%;
+}
+
+#flipcard {
+  background: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 20px 20px 20px 0;
+}
+
+#card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  margin: 0;
+}
+
+#front,
+#front2,
+#front3,
+#back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+#front {
+  background: url("../../images/samy/djerba.jpg");
+  background-position: center;
+}
+
+#front2 {
+  background: url("../../images/samy/place-el-hammama.jpg");
+}
+
+#front3 {
+  background: url("../../images/samy/tunis.jpg");
+}
+
+#front p,
+#front2 p,
+#front3 p {
+  background-color: #00808083;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+#back {
+  background-color: teal;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  transform: rotateX(180deg);
+  overflow: auto;
+  letter-spacing: 2px;
+}
+
+#flipcard:hover #card {
+  transform: rotateX(180deg);
+}
+
+header {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  color: #ffffff;
+  margin: 0 20px;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+}
+
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  height: 80px;
+  width: 100%;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 400px) {
+  .background-chaouen div {
+    padding: 20px;
+  }
+  .background-chaouen div h1 {
+    font-size: 30px;
+  }
+  .background-chaouen div p {
+    font-size: 25px;
+    font-weight: lighter;
+    letter-spacing: 8px;
+  }
+  .text-asid-img {
+    width: 4000px;
+    height: 500px;
+    padding: 20px;
+  }
+  .text-asid-img h2 {
+    font-size: 25px;
+  }
+}
