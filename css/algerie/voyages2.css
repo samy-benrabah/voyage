@@ -1,370 +1,397 @@
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    font-family: "Questrial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  font-family: "Questrial", sans-serif;
 }
 
 header {
-    background-image: url(../../images/samir/algérie/panoramique.jpg);
-    background-size: cover;
-    height: 50vh;
+  background-image: url(../../images/samir/algérie/panoramique.jpg);
+  background-size: cover;
+  height: 50vh;
 }
-
 
 /* Carroussel */
 
 .scene {
-    width: 210px;
-    height: 140px;
-    position: relative;
-    perspective: 1000px;
+  width: 210px;
+  height: 140px;
+  position: relative;
+  perspective: 1000px;
 }
 
 .carousel {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
 }
 
 .img {
-    position: absolute;
-    width: 190px;
-    height: 120px;
-    left: 10px;
-    top: 10px;
+  position: absolute;
+  width: 190px;
+  height: 120px;
+  left: 10px;
+  top: 10px;
 }
 
 .carousel__cell:nth-child(1) {
-    transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
 .carousel__cell:nth-child(2) {
-    transform: rotateY(40deg);
+  transform: rotateY(40deg);
 }
 
 .carousel__cell:nth-child(3) {
-    transform: rotateY(80deg);
+  transform: rotateY(80deg);
 }
 
 .carousel__cell:nth-child(4) {
-    transform: rotateY(120deg);
+  transform: rotateY(120deg);
 }
 
 .carousel__cell:nth-child(1) {
-    transform: rotateY(0deg) translateZ(288px);
+  transform: rotateY(0deg) translateZ(288px);
 }
 
 .carousel__cell:nth-child(2) {
-    transform: rotateY(40deg) translateZ(288px);
+  transform: rotateY(40deg) translateZ(288px);
 }
 
 .carousel__cell:nth-child(3) {
-    transform: rotateY(80deg) translateZ(288px);
+  transform: rotateY(80deg) translateZ(288px);
 }
 
 .carousel__cell:nth-child(4) {
-    transform: rotateY(120deg) translateZ(288px);
+  transform: rotateY(120deg) translateZ(288px);
 }
 
 .carousel {
-    transform: translateZ(-288px) rotateY(-160deg);
+  transform: translateZ(-288px) rotateY(-160deg);
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
-    width: 55vh;
-    height: 40vh;
+  width: 55vh;
+  height: 40vh;
 }
 
 .caroussel_diapo input {
-    position: absolute;
-    left: -9999px;
+  position: absolute;
+  left: -9999px;
 }
 
 .caroussel_diapo {
-    position: relative;
-    text-align: center;
-    margin: 20px auto;
+  position: relative;
+  text-align: center;
+  margin: 20px auto;
 }
 
 .contenu_carou {
-    width: 500px;
-    height: 332px;
-    margin: 2rem auto;
-    perspective: 1000px;
+  width: 500px;
+  height: 332px;
+  margin: 2rem auto;
+  perspective: 1000px;
 }
 
 .caroussel {
-    position: relative;
-    transform-style: preserve-3d;
-    width: 500px;
-    height: 332px;
-    transition: 1s transform;
+  position: relative;
+  transform-style: preserve-3d;
+  width: 500px;
+  height: 332px;
+  transition: 1s transform;
 }
 
 .caroussel img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    outline: 1px solid transparent;
-    backface-visibility: hidden;
-    will-change: transform;
-    transition: 1s transform;
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: 1px solid transparent;
+  backface-visibility: hidden;
+  will-change: transform;
+  transition: 1s transform;
 }
 
 .caroussel img:nth-child(1) {
-    transform: translate3d(0, 0, 540px) scale(0.8);
+  transform: translate3d(0, 0, 540px) scale(0.8);
 }
 
 .caroussel img:nth-child(2) {
-    transform: rotateY(45deg) translateZ(540px) scale(0.8);
+  transform: rotateY(45deg) translateZ(540px) scale(0.8);
 }
 
 .caroussel img:nth-child(3) {
-    transform: rotateY(90deg) translateZ(540px) scale(0.8);
+  transform: rotateY(90deg) translateZ(540px) scale(0.8);
 }
 
 .caroussel img:nth-child(4) {
-    transform: rotateY(135deg) translateZ(540px) scale(0.8);
+  transform: rotateY(135deg) translateZ(540px) scale(0.8);
 }
 
 .caroussel img:nth-child(5) {
-    transform: rotateY(180deg) translateZ(540px) scale(0.8);
+  transform: rotateY(180deg) translateZ(540px) scale(0.8);
 }
 
 .caroussel img:nth-child(6) {
-    transform: rotateY(225deg) translateZ(540px) scale(0.8);
+  transform: rotateY(225deg) translateZ(540px) scale(0.8);
 }
 
 .caroussel img:nth-child(7) {
-    transform: rotateY(270deg) translateZ(540px) scale(0.8);
+  transform: rotateY(270deg) translateZ(540px) scale(0.8);
 }
 
 .caroussel img:nth-child(8) {
-    transform: rotateY(315deg) translateZ(540px) scale(0.8);
+  transform: rotateY(315deg) translateZ(540px) scale(0.8);
 }
 
-.caroussel_diapo input[type="radio"]+label {
-    cursor: pointer;
-    background-color: hsl(203, 77%, 81%);
-    display: inline-block;
-    width: 20px;
-    border-radius: 50%;
-    height: 20px;
+.caroussel_diapo input[type="radio"] + label {
+  cursor: pointer;
+  background-color: hsl(203, 77%, 81%);
+  display: inline-block;
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
 }
 
-.caroussel_diapo input[type="radio"]:checked+label {
-    background-color: hsl(203, 77%, 61%);
+.caroussel_diapo input[type="radio"]:checked + label {
+  background-color: hsl(203, 77%, 61%);
 }
-
 
 /*gauche*/
 
-.caroussel_diapo #carou_un:checked~.contenu_carou .caroussel {
-    transform: translateZ(-540px);
+.caroussel_diapo #carou_un:checked ~ .contenu_carou .caroussel {
+  transform: translateZ(-540px);
 }
 
-.caroussel_diapo #carou_deux:checked~.contenu_carou .caroussel {
-    transform: translateZ(-540px) rotateY(-45deg);
+.caroussel_diapo #carou_deux:checked ~ .contenu_carou .caroussel {
+  transform: translateZ(-540px) rotateY(-45deg);
 }
 
-.caroussel_diapo #carou_trois:checked~.contenu_carou .caroussel {
-    transform: translateZ(-540px) rotateY(-90deg);
+.caroussel_diapo #carou_trois:checked ~ .contenu_carou .caroussel {
+  transform: translateZ(-540px) rotateY(-90deg);
 }
 
-.caroussel_diapo #carou_quatre:checked~.contenu_carou .caroussel {
-    transform: translateZ(-540px) rotateY(-135deg);
+.caroussel_diapo #carou_quatre:checked ~ .contenu_carou .caroussel {
+  transform: translateZ(-540px) rotateY(-135deg);
 }
 
-.caroussel_diapo #carou_cinq:checked~.contenu_carou .caroussel {
-    transform: translateZ(-540px) rotateY(-180deg);
+.caroussel_diapo #carou_cinq:checked ~ .contenu_carou .caroussel {
+  transform: translateZ(-540px) rotateY(-180deg);
 }
 
-.caroussel_diapo #carou_six:checked~.contenu_carou .caroussel {
-    transform: translateZ(-540px) rotateY(-225deg);
+.caroussel_diapo #carou_six:checked ~ .contenu_carou .caroussel {
+  transform: translateZ(-540px) rotateY(-225deg);
 }
 
-.caroussel_diapo #carou_sept:checked~.contenu_carou .caroussel {
-    transform: translateZ(-540px) rotateY(-270deg);
+.caroussel_diapo #carou_sept:checked ~ .contenu_carou .caroussel {
+  transform: translateZ(-540px) rotateY(-270deg);
 }
 
-.caroussel_diapo #carou_huit:checked~.contenu_carou .caroussel {
-    transform: translateZ(-540px) rotateY(-315deg);
+.caroussel_diapo #carou_huit:checked ~ .contenu_carou .caroussel {
+  transform: translateZ(-540px) rotateY(-315deg);
 }
-
 
 /*droite*/
 
-.caroussel_diapo #carou_un:checked~.contenu_carou .caroussel img:nth-child(1) {
-    transform: translateZ(540px) scale(1);
+.caroussel_diapo
+  #carou_un:checked
+  ~ .contenu_carou
+  .caroussel
+  img:nth-child(1) {
+  transform: translateZ(540px) scale(1);
 }
 
-.caroussel_diapo #carou_deux:checked~.contenu_carou .caroussel img:nth-child(2) {
-    transform: rotateY(45deg) translateZ(540px) scale(1);
+.caroussel_diapo
+  #carou_deux:checked
+  ~ .contenu_carou
+  .caroussel
+  img:nth-child(2) {
+  transform: rotateY(45deg) translateZ(540px) scale(1);
 }
 
-.caroussel_diapo #carou_trois:checked~.contenu_carou .caroussel img:nth-child(3) {
-    transform: rotateY(90deg) translateZ(540px) scale(1);
+.caroussel_diapo
+  #carou_trois:checked
+  ~ .contenu_carou
+  .caroussel
+  img:nth-child(3) {
+  transform: rotateY(90deg) translateZ(540px) scale(1);
 }
 
-.caroussel_diapo #carou_quatre:checked~.contenu_carou .caroussel img:nth-child(4) {
-    transform: rotateY(135deg) translateZ(540px) scale(1);
+.caroussel_diapo
+  #carou_quatre:checked
+  ~ .contenu_carou
+  .caroussel
+  img:nth-child(4) {
+  transform: rotateY(135deg) translateZ(540px) scale(1);
 }
 
-.caroussel_diapo #carou_cinq:checked~.contenu_carou .caroussel img:nth-child(5) {
-    transform: rotateY(180deg) translateZ(540px) scale(1);
+.caroussel_diapo
+  #carou_cinq:checked
+  ~ .contenu_carou
+  .caroussel
+  img:nth-child(5) {
+  transform: rotateY(180deg) translateZ(540px) scale(1);
 }
 
-.caroussel_diapo #carou_six:checked~.contenu_carou .caroussel img:nth-child(6) {
-    transform: rotateY(225deg) translateZ(540px) scale(1);
+.caroussel_diapo
+  #carou_six:checked
+  ~ .contenu_carou
+  .caroussel
+  img:nth-child(6) {
+  transform: rotateY(225deg) translateZ(540px) scale(1);
 }
 
-.caroussel_diapo #carou_sept:checked~.contenu_carou .caroussel img:nth-child(7) {
-    transform: rotateY(270deg) translateZ(540px) scale(1);
+.caroussel_diapo
+  #carou_sept:checked
+  ~ .contenu_carou
+  .caroussel
+  img:nth-child(7) {
+  transform: rotateY(270deg) translateZ(540px) scale(1);
 }
 
-.caroussel_diapo #carou_huit:checked~.contenu_carou .caroussel img:nth-child(8) {
-    transform: rotateY(315deg) translateZ(540px) scale(1);
+.caroussel_diapo
+  #carou_huit:checked
+  ~ .contenu_carou
+  .caroussel
+  img:nth-child(8) {
+  transform: rotateY(315deg) translateZ(540px) scale(1);
 }
-
 
 /* Fin de Carroussel */
-
 
 /* MISE EN FORME CORPS DE TEXTE */
 
 h1 {
-    margin-top: 150px;
-    text-align: center;
-    font-size: 70px;
+  margin-top: 150px;
+  text-align: center;
+  font-size: 70px;
 }
 
 #description {
-    display: flex;
-    font-size: 30px;
-    background-color: #405e63;
-    height: 100px;
-    align-items: center;
-    color: #ffffff;
+  display: flex;
+  font-size: 30px;
+  background-color: #405e63;
+  height: 100px;
+  align-items: center;
+  color: #ffffff;
 }
 
 .img_corps {
-    width: 300px;
-    height: auto;
+  width: 300px;
+  height: auto;
 }
 
 #corps {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 #haut {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
 #haut,
 #bas {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #405e63;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #405e63;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #background {
-    background-color: #5b858a;
-    padding-top: 2px;
-    margin-top: 3%;
-    padding-bottom: 2px;
-    margin-bottom: 3%;
+  background-color: #5b858a;
+  padding-top: 2px;
+  margin-top: 3%;
+  padding-bottom: 2px;
+  margin-bottom: 3%;
 }
 
 #description {
-    margin-top: 1%;
-    margin-bottom: 3%;
-    text-align: center;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  text-align: center;
 }
 
 #bas {
-    margin-bottom: 2%;
+  margin-bottom: 2%;
 }
 
 #culture,
 #histoire,
 #paysage,
 #ville {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
 }
 
 .txt_box {
-    width: 60%;
+  width: 60%;
 }
 
 .txt {
-    font-size: 20px;
-    text-align: justify;
-    color: rgb(250, 250, 242);
+  font-size: 20px;
+  text-align: justify;
+  color: rgb(250, 250, 242);
 }
 
 h2 {
-    color: #9e9e9e;
+  color: #9e9e9e;
 }
 
 #corps_villes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    background-color: #888888;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  background-color: #888888;
 }
 
 .lien_miniatures {
-    position: relative;
-    filter: grayscale(0%);
-    transition: 0.5s;
-    margin-top: 1%;
-    margin-bottom: 1%;
+  position: relative;
+  filter: grayscale(0%);
+  transition: 0.5s;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 #lien_txt {
-    position: absolute;
-    z-index: +1;
-    opacity: 0;
-    transition: opacity 0.5s;
-    font-size: 30px;
-    top: 35%;
-    text-align: center;
-    width: 100%;
+  position: absolute;
+  z-index: +1;
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-size: 30px;
+  top: 35%;
+  text-align: center;
+  width: 100%;
 }
 
 .titre_txt {
-    color: white;
-    text-shadow: 1px 2px 3px black;
+  color: white;
+  text-shadow: 1px 2px 3px black;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .lien_miniatures:hover #lien_txt {
-    opacity: 1;
+  opacity: 1;
 }
 
 .lien_miniatures:hover {
-    filter: grayscale(100%);
+  filter: grayscale(100%);
 }
