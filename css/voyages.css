@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ///// NAVIGATION //// */
 
 header ul {
@@ -110,3 +111,87 @@ footer img {
 
 
 /* ///// FIN FOOTER ///// */
+=======
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Questrial", sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "oriental";
+    src: url(../ArabDances.ttf);
+    background-size: cover;
+}
+
+h1 {
+    font-family: "oriental";
+    font-size: 100px;
+}
+
+nav {
+    top: 0;
+}
+
+#titre {
+    margin-top: 5%;
+}
+
+header {
+    height: 750px;
+    background-image: url(../img/backgroundheader.jpg);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+}
+
+h2 {
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: justify;
+    margin-top: 8%;
+    font-size: 30px;
+}
+
+#vignettes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+#vignettes_ind {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img {
+    width: 500px;
+    height: 310px;
+    filter: grayscale(100%);
+    transition: 0.3s ease-in-out;
+}
+
+.img:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+}
+
+footer div div {
+    height: 180px;
+}
+>>>>>>> master
