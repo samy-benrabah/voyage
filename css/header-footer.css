@@ -133,6 +133,7 @@ footer ul li {
 
 footer img {
     width: 100px;
+    height: auto;
     opacity: 0.5;
 }
 

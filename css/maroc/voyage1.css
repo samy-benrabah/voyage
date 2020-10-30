@@ -6,17 +6,13 @@
  
  .section {
      text-align: justify;
- }
- 
- video {
-     position: absolute;
-     height: 100vh;
+     padding-bottom: 50px;
  }
  
  .chefchaouen {
      width: 250px;
      height: 250px;
-     background-image: url("../images/maroc/chaouen/chefchaouen.jpg");
+     background-image: url("../../images/morad/chaouen/chefchaouen.jpg");
      background-repeat: no-repeat;
      box-shadow: 0 0 0 2px #8fc0e7;
      border-radius: 25px;
@@ -51,7 +47,7 @@
  .agadir {
      width: 250px;
      height: 250px;
-     background-image: url("../images/maroc/agadir/agadir.jpg");
+     background-image: url("../../images/morad/agadir/agadir.jpg");
      background-repeat: no-repeat;
      box-shadow: 0 0 0 2px #f3b4ff;
      border-radius: 25px;
@@ -87,7 +83,7 @@
  }
  
  main {
-     background: url("../images/maroc/background.jpg") fixed;
+     background: url("../../images/morad/maroc/background.jpg") fixed;
  }
  /* Carroussel */
  
@@ -147,10 +143,6 @@
  
  .carousel {
      transform: translateZ(-288px) rotateY(-160deg);
- }
- 
- * {
-     box-sizing: border-box
  }
  
  img {
