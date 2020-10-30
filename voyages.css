@@ -58,11 +58,22 @@ h2 {
   justify-content: space-between;
 }
 
-img {
+.img {
   width: 500px;
+  height: 310px;
+  filter: grayscale(100%);
+  transition: 0.3s ease-in-out;
+}
+.img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 p {
   font-size: 30px;
   text-align: center;
+}
+
+footer div div {
+  height: 180px;
 }
