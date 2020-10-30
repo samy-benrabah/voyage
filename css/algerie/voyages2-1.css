@@ -1,86 +1,88 @@
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0;
-  font-family: "Questrial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    font-family: "Questrial", sans-serif;
 }
 
 header {
-  background-image: url(img/alger/img3.jpg);
-  background-size: cover;
-  height: 70vh;
+    background-image: url(../../images/samir/alger/img3.jpg);
+    background-size: cover;
+    height: 70vh;
 }
 
 h1 {
-  text-align: center;
-  font-size: 70px;
-  margin-bottom: 0;
-  margin-top: 15%;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 0;
+    margin-top: 15%;
 }
 
 #intro_txt {
-  color: black;
-  font-size: 30px;
-  margin: 0;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  line-height: 40px;
-  background-color: #888888;
-  color: #ffffff;
+    color: black;
+    font-size: 30px;
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    line-height: 40px;
+    background-color: #888888;
+    color: #ffffff;
 }
 
+
 /* MISE EN FORME VIGNETTES PHOTOS */
+
 #global {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3%;
 }
 
 #millieu {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 605px;
-  margin-left: 5px;
-  margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 605px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #gauche,
 #droite {
-  width: 330px;
-  margin: 0;
+    width: 330px;
+    margin: 0;
 }
 
 #img3_img {
-  width: 400px;
-  height: 300px;
+    width: 400px;
+    height: 300px;
 }
 
 #img4_img {
-  width: 350px;
-  height: 180px;
-  margin-right: 5px;
+    width: 350px;
+    height: 180px;
+    margin-right: 5px;
 }
 
 #img2_img {
-  width: 200px;
-  margin-right: 5px;
+    width: 200px;
+    margin-right: 5px;
 }
 
 #img5_img {
-  width: 250px;
-  height: 180px;
+    width: 250px;
+    height: 180px;
 }
 
 #img1_img,
 #img6_img {
-  height: 485px;
-  width: 330px;
+    height: 485px;
+    width: 330px;
 }
 
 #img1_img,
@@ -89,83 +91,86 @@ h1 {
 #img4_img,
 #img5_img,
 #img6_img {
-  transition: transform 0.5s;
+    transition: transform 0.5s;
 }
 
 #img2_img:hover,
 #img3_img:hover,
 #img4_img:hover,
 #img5_img:hover {
-  transform: scale(1.15);
+    transform: scale(1.15);
 }
 
 #img1_img:hover,
 #img6_img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
+
+
 /* FIN MISE EN FORME VIGNETTES PHOTOS */
 
 h2 {
-  text-align: center;
-  margin-top: 3%;
-  font-size: 30px;
-  background-color: #888888;
-  color: #222222;
-  padding-top: 1%;
-  padding-bottom: 1%;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 30px;
+    background-color: #888888;
+    color: #222222;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 h3 {
-  text-align: center;
-  color: rgb(250, 250, 242);
-  font-size: 22px;
+    text-align: center;
+    color: rgb(250, 250, 242);
+    font-size: 22px;
 }
 
 p {
-  text-align: justify;
-  color: rgb(250, 250, 242);
-  line-height: 25px;
+    text-align: justify;
+    color: rgb(250, 250, 242);
+    line-height: 25px;
 }
 
 #vignettes_global {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3%;
 }
 
 #vignette_haut,
 #vignette_bas {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 #vignette_bas {
-  animation: slidein1 2s forwards;
-  margin-top: 3%;
+    animation: slidein1 2s forwards;
+    margin-top: 3%;
 }
 
 @keyframes slidein1 {
-  0% {
-    transform: translateX(-1500px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+    0% {
+        transform: translateX(-1500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
+
 #vignette_haut {
-  animation: slidein2 2s forwards;
-  margin-top: 3%;
+    animation: slidein2 2s forwards;
+    margin-top: 3%;
 }
 
 @keyframes slidein2 {
-  0% {
-    transform: translateX(+1500px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+    0% {
+        transform: translateX(+1500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 #img1_vign,
@@ -174,21 +179,21 @@ p {
 #img4_vign,
 #img5_vign,
 #img6_vign {
-  border-radius: 5px;
+    border-radius: 5px;
 }
 
 .vignette {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 18%;
-  background-color: #5b858a;
-  border-radius: 10px;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-  font-size: 20px;
-  box-shadow: 5px 8px 15px 0px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18%;
+    background-color: #5b858a;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    box-shadow: 5px 8px 15px 0px black;
 }
 
 #img1_vign,
@@ -197,5 +202,5 @@ p {
 #img4_vign,
 #img5_vign,
 #img6_vign {
-  height: 150px;
+    height: 150px;
 }

@@ -4,6 +4,18 @@
      box-sizing: border-box;
  }
  
+ header {
+     background-image: url(../../images/samir/algérie/panoramique.jpg);
+     background-size: cover;
+     height: 50vh;
+ }
+ 
+ h1 {
+     text-align: center;
+     font-size: 70px;
+     padding-top: 120px;
+ }
+ 
  .section {
      text-align: justify;
      padding-bottom: 50px;
@@ -84,6 +96,7 @@
  
  main {
      background: url("../../images/morad/maroc/background.jpg") fixed;
+     padding-top: 20px;
  }
  /* Carroussel */
  
